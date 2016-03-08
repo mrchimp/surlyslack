@@ -1,0 +1,8 @@
+{
+    "token": "YOUR-SLACK-BOT-TOKEN-HERE",
+    "brain": "./YOUR/AIML/DIRECTORY",
+    "food_options": [
+        "Pizza Hut",
+        "Domino's"
+    ]
+}
