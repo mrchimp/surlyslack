@@ -3,6 +3,8 @@
     "brain": "./YOUR/AIML/DIRECTORY",
     "food_options": [
         "Pizza Hut",
-        "Domino's"
-    ]
+        "Domino's",
+        "Cook your own damn food."
+    ],
+    "markov_brain": "./YOUR/MARKOV/INPUT.txt"
 }
