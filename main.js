@@ -98,7 +98,17 @@ var listen = function (bot, message) {
   addMarkovContent(message.text);
 };
 
+/**
+ * Give the number of words in the markov chain
+ */
+var count = function (bot, message) {
+  var content = fs.readFileSync(markov_file, 'utf8');
+  var count = content.split(' ').length;
+  bot.reply(message, 'I have ' + count + ' words.');
+};
+
 controller.hears(['food'], ['direct_message', "direct_mention", "mention"], suggestFood)
+  .hears(['count'], ['direct_message', 'direct_mention', 'mention'], count)
   .hears([".*"], ["direct_message", "direct_mention", "mention"], talk)
   .hears(['.*'], ['ambient', 'direct_message'], listen);
 
