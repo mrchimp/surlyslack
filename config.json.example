@@ -6,5 +6,7 @@
         "Domino's",
         "Cook your own damn food."
     ],
-    "markov_brain": "./YOUR/MARKOV/INPUT.txt"
+    "markov_brain": "./YOUR/MARKOV/INPUT.txt",
+    "start_with_caps": true,
+    "end_with_full_stop": true
 }
